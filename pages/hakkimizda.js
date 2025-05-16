@@ -54,7 +54,7 @@ export default function hakkimizda() {
                 </div>
                 <div className="relative h-[600px] rounded-2xl overflow-hidden ">
                     <img 
-                        src="IMG_9436.png" 
+                        src="dıscephe.png" 
                         alt="S&Y Otomotiv Atölye" 
                         className="w-full h-full object-contain"
                     />

@@ -25,7 +25,7 @@ export default function Footer()
                     </div>
                     <div className="flex">
                         <p className="mr-1 font-bold text-[#fff]">E-posta:</p>
-                        <a href="mailto:info@syotomotiv.com" aria-label="E-posta" title="E-posta" className="transition-colors duration-300 text-[#e0e0e0] hover:text-[#81C4FF]">dervisplastik@hotmail.com</a>
+                        <a href="mailto:dervisplastik@hotmail.com" aria-label="E-posta" title="E-posta" className="transition-colors duration-300 text-[#e0e0e0] hover:text-[#81C4FF]">dervisplastik@hotmail.com</a>
                     </div>
                     <div className="flex">
                         <p className="mr-1 font-bold text-[#fff]">Adres:</p>
