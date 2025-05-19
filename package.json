@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-free": "^6.4.2",
     "@react-google-maps/api": "^2.20.6",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
     "next": "13.5.2",
+    "nodemailer": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "scheduler": "^0.26.0"
