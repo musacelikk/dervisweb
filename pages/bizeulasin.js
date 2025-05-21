@@ -83,7 +83,7 @@ if (typeof window !== 'undefined') {
     };
 }
 
-export default function bizeulasin() {
+export default function BizeUlasin() {
     const [isOpen, setIsOpen] = useState(false);
     const [map, setMap] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
@@ -164,211 +164,149 @@ export default function bizeulasin() {
         />
         
         {/* Hero Section */}
-        <div className="relative py-24 bg-gradient-dark">
-            <div className="absolute inset-0 bg-[url('/images/contact-bg.jpg')] bg-cover bg-center opacity-10"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-my-siyah via-transparent to-transparent"></div>
+        <div className="relative pt-20 sm:pt-24 md:pt-28 py-8 sm:py-12 md:py-16 bg-[#0e1422]">
+            {/* Mobil ve tablet için görsel */}
+            <div className="absolute inset-0 md:hidden bg-[url('/oncephe.jpg')] bg-cover bg-center bg-no-repeat opacity-30"></div>
+            {/* Masaüstü için görsel */}
+            <div className="absolute inset-0 hidden md:block bg-[url('/cphe.jpg')] bg-cover bg-center bg-no-repeat opacity-30"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0e1422] via-[#0e1422]/80 to-transparent"></div>
             <div className="relative z-10 container mx-auto px-4 text-center">
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-float">
-                    Bize Ulaşın
+                <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 sm:mb-6 animate-float">
+                    İletişim Bilgilerimiz
                 </h1>
-                <p className="text-xl text-my-gray-light max-w-3xl mx-auto">
-                    Sorularınız için bize ulaşın, en kısa sürede size dönüş yapalım.
+                <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+                    20 yılı aşkın tecrübemizle plastik, cam ve kağıt ürünlerinde güvenilir çözüm ortağınız.
                 </p>
             </div>
         </div>
 
-        {/* Map Section */}
-        <div className="w-full py-12 bg-gray-50">
+        {/* Location Section */}
+        <div className="w-full py-8 sm:py-12 bg-[#0e1422]">
             <div className="max-w-7xl mx-auto px-4">
-                <div className="mb-12 text-center">
-                    <h2 className="text-3xl font-bold mb-4">Bizi Ziyaret Edin</h2>
+                <div className="mb-8 sm:mb-12 text-center">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-white">Bizi Ziyaret Edin</h2>
+                    <p className="text-gray-400">Mağazamıza gelmeden önce bilmeniz gerekenler</p>
                 </div>
-                <div className="rounded-lg over shadow-lg">
-                    {/* Google Maps bileşeni client-side'da yüklenecek */}
-                    <div id="map" style={mapContainerStyle}></div>
-                </div>
-                
-                {/* Yol Tarifi Kartları */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                        <div className="text-red-600 mb-4">
-                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* Sol Taraf - Bilgiler */}
+                    <div className="space-y-6">
+                        <div className="bg-white/5 p-6 rounded-lg backdrop-blur-sm">
+                            <h3 className="text-xl font-semibold text-white mb-4">Çalışma Saatleri</h3>
+                            <div className="space-y-3">
+                                <div className="flex justify-between items-center">
+                                    <span className="text-gray-400">Pazartesi - Cuma</span>
+                                    <span className="text-white">08:00 - Akşam Ezanı</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <span className="text-gray-400">Cumartesi</span>
+                                    <span className="text-white">08:00 - Akşam Ezanı</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <span className="text-gray-400">Pazar</span>
+                                    <span className="text-white">Kapalı</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3 className="font-bold text-lg mb-2">Toplu Taşıma</h3>
-                        <p className="text-gray-600">Derviş Plastik'e Nasıl Giderim?</p>
-                        <Link 
-                            href="https://www.google.com/maps/dir/37.2018357,38.7192237/DERV%C4%B0%C5%9E+T%C4%B0CARET,+%C4%B0mam+Bak%C4%B1r,+664+Sk+No:72,+63040+Haliliye%2F%C5%9Eanl%C4%B1urfa/@37.1580694,38.7329566,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x1534715b2470ccbf:0xb293a52ed7617e50!2m2!1d38.8153581!2d37.1580979!3e3?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" 
-                            className="bg-white/10 text-white font-bold py-3 px-8 rounded-full hover:bg-white/20 transition duration-300 transform hover:scale-105"
-                        >
-                        </Link>
+
+                        <div className="bg-white/5 p-6 rounded-lg backdrop-blur-sm">
+                            <h3 className="text-xl font-semibold text-white mb-4">Öne Çıkan Özellikler</h3>
+                            <ul className="space-y-3">
+                                <li className="flex items-center text-gray-400">
+                                    <svg className="w-5 h-5 text-[#ad0203] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Geniş Ürün Yelpazesi
+                                </li>
+                                <li className="flex items-center text-gray-400">
+                                    <svg className="w-5 h-5 text-[#ad0203] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Ücretsiz Otopark
+                                </li>
+                                <li className="flex items-center text-gray-400">
+                                    <svg className="w-5 h-5 text-[#ad0203] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Kolay Erişim
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                        <div className="text-red-600 mb-4">
-                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
-                            </svg>
+
+                    {/* Sağ Taraf - Konum Bilgisi */}
+                    <div className="bg-white/5 p-6 rounded-lg backdrop-blur-sm">
+                        <h3 className="text-xl font-semibold text-white mb-4">Konum Bilgisi</h3>
+                        <div className="space-y-4">
+                            <div className="flex items-start">
+                                <svg className="w-6 h-6 text-[#ad0203] mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <div>
+                                    <p className="text-white font-medium">Adres</p>
+                                    <p className="text-gray-400">İmam Bakır, 664 Sk No:72, 63040 Haliliye/Şanlıurfa</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start">
+                                <svg className="w-6 h-6 text-[#ad0203] mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <div>
+                                    <p className="text-white font-medium">Telefon</p>
+                                    <p className="text-gray-400">+0 (530) 921 12 97</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start">
+                                <svg className="w-6 h-6 text-[#ad0203] mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <div>
+                                    <p className="text-white font-medium">E-posta</p>
+                                    <p className="text-gray-400">dervisplastik@hotmail.com</p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 className="font-bold text-lg mb-2">Otopark</h3>
-                        <p className="text-gray-600">Müşterilerimiz için ücretsiz otoparkımız mevcuttur.</p>
-                    </div>
-                    
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                        <div className="text-red-600 mb-4">
-                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
+                        <div className="mt-6">
+                            <Link 
+                                href="https://www.google.com/maps/place/DERV%C4%B0%C5%9E+T%C4%B0CARET/@37.1580979,38.8127832,17z/data=!3m1!4b1!4m6!3m5!1s0x1534715b2470ccbf:0xb293a52ed7617e50!8m2!3d37.1580979!4d38.8153581!16s%2Fg%2F11h7ky1qv8?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center w-full bg-[#ad0203] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#ad0203]/80 transition-all duration-300"
+                            >
+                                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                Google Maps'te Göster
+                            </Link>
                         </div>
-                        <h3 className="font-bold text-lg mb-2">Çalışma Saatleri</h3>
-                        <p className="text-gray-600">Hafta içi: 08:30- Akşam Ezanı<br/>Hafta sonu: 8.30- Akşam Ezanı<br/>Pazar: Kapalı</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        {/* Contact Section */}
-        <div className="py-24 bg-gradient-light">
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    {/* Contact Form */}
-                    <div className="bg-white p-8 rounded-2xl shadow-soft">
-                        <h2 className="text-3xl font-bold mb-8">
-                            <span className="bg-gradient-primary bg-clip-text text-transparent">İletişim Formu</span>
-                        </h2>
-                        <form onSubmit={handleSubmit} className="space-y-6">
-                            <div>
-                                <label htmlFor="name" className="block text-my-gray-dark mb-2">Adınız Soyadınız</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-my-red focus:ring-2 focus:ring-my-red/20 transition-all duration-300"
-                                    placeholder="Adınız Soyadınız"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="email" className="block text-my-gray-dark mb-2">E-posta Adresiniz</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-my-red focus:ring-2 focus:ring-my-red/20 transition-all duration-300"
-                                    placeholder="E-posta Adresiniz"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="phone" className="block text-my-gray-dark mb-2">Telefon Numaranız</label>
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleChange}
-                                    required
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-my-red focus:ring-2 focus:ring-my-red/20 transition-all duration-300"
-                                    placeholder="Telefon Numaranız"
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block text-my-gray-dark mb-2">Mesajınız</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                    rows="4"
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-my-red focus:ring-2 focus:ring-my-red/20 transition-all duration-300"
-                                    placeholder="Mesajınız"
-                                ></textarea>
-                            </div>
-                            <button
-                                type="submit"
-                                disabled={status === 'sending'}
-                                className="w-full bg-gradient-primary text-white font-bold py-4 px-8 rounded-lg hover:shadow-glow transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
-                            >
-                                {status === 'sending' ? 'Gönderiliyor...' : 'Gönder'}
-                            </button>
-                            {status === 'success' && (
-                                <p className="text-green-600 text-center">Mesajınız başarıyla gönderildi!</p>
-                            )}
-                            {status === 'error' && (
-                                <p className="text-red-600 text-center">Bir hata oluştu. Lütfen tekrar deneyin.</p>
-                            )}
-                        </form>
-                    </div>
-
-                    {/* Contact Info */}
-                    <div className="space-y-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-soft">
-                            <h2 className="text-3xl font-bold mb-8">
-                                <span className="bg-gradient-primary bg-clip-text text-transparent">İletişim Bilgileri</span>
-                            </h2>
-                            <div className="space-y-6">
-                                <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold text-my-siyah mb-2">Telefon</h3>
-                                        <p className="text-my-gray">+90 542 487 32 02</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold text-my-siyah mb-2">E-posta</h3>
-                                        <p className="text-my-gray">dervisplastik@hotmail.com</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold text-my-siyah mb-2">Adres</h3>
-                                        <p className="text-my-gray">Şanlıurfa, Türkiye</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Map */}
-                        <div className="bg-white p-8 rounded-2xl shadow-soft">
-                            <h2 className="text-3xl font-bold mb-8">
-                                <span className="bg-gradient-primary bg-clip-text text-transparent">Konum</span>
-                            </h2>
-                            <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.1234567890123!2d38.8127832!3d37.1580979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1534715b2470ccbf%3A0xb293a52ed7617e50!2sDERV%C4%B0%C5%9E%20T%C4%B0CARET!5e0!3m2!1str!2str!4v1620000000000!5m2!1str!2str"
-                                    width="100%"
-                                    height="100%"
-                                    style={{ border: 0 }}
-                                    allowFullScreen=""
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                ></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        {/* CTA Section */}
+        <div className="relative py-8 sm:py-12 md:py-16">
+            <div className="absolute inset-0 bg-[url('/images/cta-bg.jpg')] bg-cover bg-center opacity-10"></div>
+            <div className="absolute inset-0 bg-[#0e1422]"></div>
+            <div className="relative z-10 container mx-auto px-4 text-center">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">
+                    Siz de Ailemizin Bir Parçası Olun
+                </h2>
+                <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 sm:mb-8 max-w-3xl mx-auto">
+                    Instagram sayfamızı takip ederek en yeni ürünlerimizden ve kampanyalarımızdan haberdar olun.
+                </p>
+                <Link 
+                    href="https://www.instagram.com/dervis.ticaret/" 
+                    className="inline-block bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] text-white font-bold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full hover:shadow-lg hover:shadow-[#ad0203]/20 transition-all duration-300 transform hover:scale-105 group text-sm sm:text-base"
+                >
+                    <span className="flex items-center justify-center">
+                        Instagram'ı Ziyaret Et
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </span>
+                </Link>
             </div>
         </div>
 

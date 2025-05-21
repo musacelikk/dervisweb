@@ -13,136 +13,84 @@ export default function Hakkimizda() {
         <Header />
 
         {/* Hero Section */}
-        <div className="relative py-24 bg-gradient-dark">
-            <div className="absolute inset-0 bg-[url('/cphe.jpg')] bg-cover bg-center opacity-30"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-my-siyah via-transparent to-transparent"></div>
+        <div className="relative pt-20 sm:pt-24 md:pt-28 py-8 sm:py-12 md:py-16 bg-[#0e1422]">
+            <div className="absolute inset-0 bg-[url('/cphe.jpg')] bg-cover bg-center opacity-20"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0e1422] via-transparent to-transparent"></div>
             <div className="relative z-10 container mx-auto px-4 text-center">
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-float">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-3 sm:mb-4 md:mb-6 animate-float">
                     Hakkımızda
                 </h1>
-                <p className="text-xl text-my-gray-light max-w-3xl mx-auto">
-                Derviş Plastik olarak, müşterilerimize tek çatı altında aradıkları her şeyi bulabilecekleri bir ortam sunmayı hedefliyoruz.
-
-
+                <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-3xl mx-auto">
+                    20 yılı aşkın tecrübemizle plastik, cam ve kağıt ürünlerinde güvenilir çözüm ortağınız.
                 </p>
             </div>
         </div>
 
-        {/* Vision Section */}
-        <div className="py-24 bg-gradient-light">
+        {/* About Section */}
+        <div className="py-8 sm:py-12 md:py-16 bg-[#0e1422]">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-soft group">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+                    <div className="relative h-[250px] sm:h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg group order-2 md:order-1">
                         <img 
-                            src="oncephe.jpg" 
+                            src="dıscephe.png" 
                             alt="Derviş Plastik Mağaza" 
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-my-siyah/50 to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0e1422]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <div>
-                        <h2 className="text-3xl font-bold mb-8">
-                            <span className="bg-gradient-primary bg-clip-text text-transparent">Vizyonumuz</span>
+                    <div className="space-y-4 sm:space-y-6 md:space-y-8 order-1 md:order-2">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+                            <span className="text-[#ad0203]">Biz Kimiz?</span>
                         </h2>
-                        <p className="text-my-gray-dark mb-6">
-                            Derviş Plastik olarak, plastik, cam ve kağıt ürünlerinde güvenilir bir marka olmayı hedefliyoruz. Müşterilerimize en kaliteli ürünleri en uygun fiyatlarla sunarak, sektörde öncü olmayı amaçlıyoruz.
+                        <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
+                            Derviş Plastik olarak, 20 yılı aşkın süredir müşterilerimize en kaliteli ürünleri en uygun fiyatlarla sunmaktan gurur duyuyoruz. Geniş ürün yelpazemiz ve uzman kadromuzla, işletmenizin ve evinizin ihtiyaç duyduğu tüm plastik, cam ve kağıt ürünlerini tek bir adreste bulabilirsiniz.
                         </p>
-                        <div className="grid grid-cols-2 gap-6">
-                            <div className="bg-white p-6 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300">
-                                <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center mb-4">
-                                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                    </svg>
-                                </div>
-                                <h3 className="text-xl font-bold mb-2">Çeşitlilik</h3>
-                                <p className="text-my-gray">Geniş Ürün Yelpazesi</p>
-                            </div>
-                            <div className="bg-white p-6 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300">
-                                <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center mb-4">
-                                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <h3 className="text-xl font-bold mb-2">Uygun Fiyat</h3>
-                                <p className="text-my-gray">Rekabetçi fiyatlar</p>
-                            </div>
-                        </div>
+                        <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
+                            Modern mağaza altyapımız ve stok yönetim sistemimiz sayesinde, müşterilerimize hızlı ve güvenilir hizmet sunuyoruz. Kalite standartlarımızdan ödün vermeden, rekabetçi fiyatlarımızla sektörde öncü konumumuzu sürdürüyoruz.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
         {/* Values Section */}
-        <div className="py-24 bg-white">
+        <div className="py-8 sm:py-12 md:py-16 bg-[#0e1422]">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-16">
-                    <span className="bg-gradient-primary bg-clip-text text-transparent">Değerlerimiz</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-12">
+                    <span className="text-[#ad0203]">Değerlerimiz</span>
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="bg-gradient-light p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
-                        <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
-                            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </div>
-                        <h3 className="text-2xl font-bold mb-4 text-my-siyah">Müşteri Odaklılık</h3>
-                        <p className="text-my-gray">Müşterilerimizin ihtiyaçlarını en iyi şekilde karşılamak için çalışıyoruz.</p>
-                    </div>
-                    <div className="bg-gradient-light p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
-                        <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
-                            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <div className="bg-[#0e1422] p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-[#ad0203]/20 transition-all duration-300 transform hover:scale-105 group">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] rounded-2xl flex items-center justify-center mb-4 sm:mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
-                        <h3 className="text-2xl font-bold mb-4 text-my-siyah">Pratik Çözüm</h3>
-                        <p className="text-my-gray">Aradığınızı tek bir noktada bulabileceğiniz bir alışveriş deneyimi sunuyoruz.</p>
+                        <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white group-hover:text-[#ad0203] transition-colors duration-300">Kalite</h3>
+                        <p className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                            En kaliteli ürünleri en uygun fiyatlarla sunuyoruz.
+                        </p>
                     </div>
-                    <div className="bg-gradient-light p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
-                        <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
-                            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="bg-[#0e1422] p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-[#ad0203]/20 transition-all duration-300 transform hover:scale-105 group">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] rounded-2xl flex items-center justify-center mb-4 sm:mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <h3 className="text-2xl font-bold mb-4 text-my-siyah">Yenilikçilik</h3>
-                        <p className="text-my-gray">Sürekli kendimizi geliştiriyor ve yenilikleri takip ediyoruz.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {/* Team Section */}
-        <div className="py-24 bg-gradient-light">
-            <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-16">
-                    <span className="bg-gradient-primary bg-clip-text text-transparent">Yöneticiler</span>
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
-                        <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
-                            <img 
-                                src="/images/team1.jpg" 
-                                alt="" 
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                        <h3 className="text-2xl font-bold text-center mb-2 text-my-siyah">Davut Çelik</h3>
-                        <p className="text-my-red text-center mb-4">Satış Müdürü</p>
-                        <p className="text-my-gray text-center">
-                            Müşteri ilişkileri ve satış konusunda uzman Satış Müdürü ve İşletme Ortağı.
+                        <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white group-hover:text-[#ad0203] transition-colors duration-300">Hız</h3>
+                        <p className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                            Hızlı ve güvenilir hizmet anlayışımızla yanınızdayız.
                         </p>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
-                        <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
-                            <img 
-                                src="/images/team2.jpg" 
-                                alt="" 
-                                className="w-full h-full object-cover"
-                            />
+                    <div className="bg-[#0e1422] p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-[#ad0203]/20 transition-all duration-300 transform hover:scale-105 group">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] rounded-2xl flex items-center justify-center mb-4 sm:mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
                         </div>
-                        <h3 className="text-2xl font-bold text-center mb-2 text-my-siyah">Murat Çelik</h3>
-                        <p className="text-my-red text-center mb-4">Alım Müdürü</p>
-                        <p className="text-my-gray text-center">
-                        20 yılı aşkın sektör deneyimi ile Derviş Plastik'in Alış Müdürü ve İşletme Ortağı.
+                        <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white group-hover:text-[#ad0203] transition-colors duration-300">Güven</h3>
+                        <p className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                            Müşteri memnuniyeti odaklı çalışma prensibimizle güveninizi kazanıyoruz.
                         </p>
                     </div>
                 </div>
@@ -150,21 +98,26 @@ export default function Hakkimizda() {
         </div>
 
         {/* CTA Section */}
-        <div className="relative py-24">
+        <div className="relative py-8 sm:py-12 md:py-16">
             <div className="absolute inset-0 bg-[url('/images/cta-bg.jpg')] bg-cover bg-center opacity-10"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"></div>
-            <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Instagram Sayfamıza Göz Atın!
+            <div className="absolute inset-0 bg-[#0e1422]"></div>
+            <div className="relative z-10 container mx-auto px-4 text-center">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">
+                    Siz de Ailemizin Bir Parçası Olun
                 </h2>
-                <p className="text-xl text-gray-100 mb-12">
-                Siz de Ailemizin Bir Parçası Olun, Instagram Sayfamıza Bekliyoruz...
+                <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 sm:mb-8 max-w-3xl mx-auto">
+                    Instagram sayfamızı takip ederek en yeni ürünlerimizden ve kampanyalarımızdan haberdar olun.
                 </p>
                 <Link 
                     href="https://www.instagram.com/dervis.ticaret/" 
-                    className="inline-block bg-white text-gray-900 font-bold py-4 px-12 rounded-full hover:bg-gray-100 transition duration-300 transform hover:scale-105"
+                    className="inline-block bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] text-white font-bold py-2.5 sm:py-3 px-6 sm:px-8 rounded-full hover:shadow-lg hover:shadow-[#ad0203]/20 transition-all duration-300 transform hover:scale-105 group text-sm sm:text-base"
                 >
-                    Instagram'ı Ziyaret Et
+                    <span className="flex items-center justify-center">
+                        Instagram'ı Ziyaret Et
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </span>
                 </Link>
             </div>
         </div>
