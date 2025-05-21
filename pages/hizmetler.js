@@ -85,26 +85,66 @@ export default function Hizmetler() {
             </div>
 
             {/* Categories Section */}
-            <div className="py-8 sm:py-12 md:py-16 bg-[#0e1422]">
+            <div className="bg-gradient-light py-24">
                 <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-                        {categories.map((category) => (
-                            <div
-                                key={category.id}
-                                className="bg-[#0e1422] p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-[#ad0203]/20 transition-all duration-300 transform hover:scale-105 group cursor-pointer"
-                                onClick={() => setSelectedCategory(category)}
-                            >
-                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] rounded-2xl flex items-center justify-center mb-4 sm:mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                                    {category.icon}
-                                </div>
-                                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white group-hover:text-[#ad0203] transition-colors duration-300">
-                                    {category.title}
-                                </h3>
-                                <p className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                                    {category.description}
-                                </p>
+                    <h2 className="text-4xl font-bold text-center mb-16">
+                        <span className="bg-gradient-primary bg-clip-text text-transparent">Kategorilerimiz</span>
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
+                            <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
+                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
                             </div>
-                        ))}
+                            <h3 className="text-2xl font-bold mb-4 text-my-siyah">Cam Ürünleri</h3>
+                            <p className="text-my-gray">"Cam Ürünlerinde Geniş Seçenek, Güvenilir Markalar!"</p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
+                            <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
+                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4 text-my-siyah">Plastik Ürünler</h3>
+                            <p className="text-my-gray">Günlük hayatınızı kolaylaştıran pratik ve ekonomik plastik ürünler. Saklama kaplarından organizerlere geniş ürün yelpazesiyle hizmetinizdeyiz.</p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
+                            <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
+                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4 text-my-siyah">Temizlik Ürünleri</h3>
+                            <p className="text-my-gray">Evinizi ve iş yerinizi hijyenik tutmak için etkili ve kaliteli temizlik ürünleri. Her ihtimale karşı kapsamlı çözümler.</p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
+                            <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
+                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4 text-my-siyah">Kağıt Ürünleri</h3>
+                            <p className="text-my-gray">Peçete, havlu, tabak ve daha fazlası... Hijyenik ve kullanışlı kağıt ürünlerle her ortamda pratik çözümler.</p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
+                            <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
+                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4 text-my-siyah">Poşet Ürünleri</h3>
+                            <p className="text-my-gray">Farklı boy ve türlerde dayanıklı poşet çeşitleriyle taşıma ve paketleme artık çok daha kolay.</p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300 transform hover:scale-105">
+                            <div className="w-16 h-16 bg-gradient-gold rounded-2xl flex items-center justify-center mb-6">
+                                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4 text-my-siyah">Mutfak Gereçleri</h3>
+                            <p className="text-my-gray">Mutfakta ihtiyaç duyduğunuz her şey burada! Hazırlık, pişirme ve saklama süreçlerinizi kolaylaştıran kullanışlı ürünler ile pratik çözümler.</p>
+                        </div>
                     </div>
                 </div>
             </div>

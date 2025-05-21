@@ -34,7 +34,7 @@ export default function Header() {
                             Ana Sayfa
                         </Link>
                         <Link href="/hizmetler" className="text-white hover:text-[#ad0203] transition-colors duration-300 text-sm sm:text-base">
-                            Hizmetlerimiz
+                            Katagorilerimiz
                         </Link>
                         <Link href="/hakkimizda" className="text-white hover:text-[#ad0203] transition-colors duration-300 text-sm sm:text-base">
                             Hakkımızda
@@ -67,7 +67,7 @@ export default function Header() {
                                 Ana Sayfa
                             </Link>
                             <Link href="/hizmetler" className="block text-white hover:text-[#ad0203] transition-colors duration-300 text-sm sm:text-base">
-                                Hizmetlerimiz
+                                Katagorilerimiz
                             </Link>
                             <Link href="/hakkimizda" className="block text-white hover:text-[#ad0203] transition-colors duration-300 text-sm sm:text-base">
                                 Hakkımızda

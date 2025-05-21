@@ -68,7 +68,7 @@ export default function Hakkimizda() {
                         </div>
                         <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white group-hover:text-[#ad0203] transition-colors duration-300">Kalite</h3>
                         <p className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                            En kaliteli ürünleri en uygun fiyatlarla sunuyoruz.
+                            20 yılı aşkın tecrübemizle, müşteri memnuniyetini ön planda tutarak en yüksek kalite standartlarında hizmet veriyoruz.
                         </p>
                     </div>
                     <div className="bg-[#0e1422] p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-[#ad0203]/20 transition-all duration-300 transform hover:scale-105 group">
