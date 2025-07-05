@@ -79,8 +79,7 @@ export default function Hizmetler() {
                         Hizmetlerimiz
                     </h1>
                     <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-3xl mx-auto">
-                        20 yılı aşkın tecrübemizle plastik, cam ve kağıt ürünlerinde güvenilir çözüm ortağınız.
-                    </p>
+                    20 yılı aşkın tecrübemizle plastik, cam, kağıt, temizlik, ambalaj ve züccaciye ürünlerinde güvenilir çözüm ortağınız.                    </p>
                 </div>
             </div>
 

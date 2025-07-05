@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Derviş Plastik - Şanlıurfa</title>
+        <title>Derviş Plastik & Ticaret - Şanlıurfa</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -22,8 +22,7 @@ export default function Home() {
             DERVİŞ PLASTİK
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-8">
-            20 yılı aşkın tecrübemizle plastik, cam ve kağıt ürünlerinde güvenilir çözüm ortağınız.
-          </p>
+          20 yılı aşkın tecrübemizle plastik, cam, kağıt, temizlik, ambalaj ve züccaciye ürünlerinde güvenilir çözüm ortağınız.          </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link 
               href="https://www.google.com/maps/place/DERV%C4%B0%C5%9E+T%C4%B0CARET/@37.1580979,38.8127832,17z/data=!3m1!4b1!4m6!3m5!1s0x1534715b2470ccbf:0xb293a52ed7617e50!8m2!3d37.1580979!4d38.8153581!16s%2Fg%2F11h7ky1qv8?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" 
@@ -58,7 +57,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
-                <span className="bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] bg-clip-text text-transparent">Neden Derviş Plastik?</span>
+                <span className="bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] bg-clip-text text-transparent">Neden Derviş Ticaret?</span>
               </h2>
               <ul className="space-y-4 sm:space-y-6">
                 <li className="flex items-start space-x-3 sm:space-x-4 group">
@@ -67,7 +66,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base text-gray-400 group-hover:text-white transition-colors duration-300">20+ yılı aşkın sektör deneyimi ve uzman kadro</span>
+                  <span className="text-sm sm:text-base text-gray-400 group-hover:text-white transition-colors duration-300">20+ yılı aşkın sektör deneyimi ve uzman kadro.</span>
                 </li>
                 <li className="flex items-start space-x-3 sm:space-x-4 group">
                   <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] rounded-full flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-[#ad0203]/20 transition-all duration-300 transform group-hover:scale-110">
@@ -75,7 +74,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base text-gray-400 group-hover:text-white transition-colors duration-300">Geniş ürün yelpazesi ve modern mağaza altyapısı</span>
+                  <span className="text-sm sm:text-base text-gray-400 group-hover:text-white transition-colors duration-300">Geniş ürün yelpazemiz ve yılların deneyimiyle ihtiyaçlarınıza en uygun çözümleri sunuyoruz.</span>
                 </li>
                 <li className="flex items-start space-x-3 sm:space-x-4 group">
                   <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] rounded-full flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-[#ad0203]/20 transition-all duration-300 transform group-hover:scale-110">
@@ -83,7 +82,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base text-gray-400 group-hover:text-white transition-colors duration-300">Hızlı, güvenilir ve şeffaf hizmet anlayışı</span>
+                  <span className="text-sm sm:text-base text-gray-400 group-hover:text-white transition-colors duration-300">Hızlı, güvenilir ve şeffaf hizmet anlayışı.</span>
                 </li>
                 <li className="flex items-start space-x-3 sm:space-x-4 group">
                   <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-[#ad0203] via-[#ad0203] to-[#0e1422] rounded-full flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-[#ad0203]/20 transition-all duration-300 transform group-hover:scale-110">
@@ -91,7 +90,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base text-gray-400 group-hover:text-white transition-colors duration-300">Rekabetçi fiyatlar ve müşteri memnuniyeti garantisi</span>
+                  <span className="text-sm sm:text-base text-gray-400 group-hover:text-white transition-colors duration-300">Rekabetçi fiyatlar ve müşteri memnuniyeti garantisi.</span>
                 </li>
               </ul>
             </div>

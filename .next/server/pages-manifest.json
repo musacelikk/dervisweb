@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/hizmetler": "pages/hizmetler.js",
-  "/hakkimizda": "pages/hakkimizda.js",
-  "/": "pages/index.js"
+  "/bizeulasin": "pages/bizeulasin.js",
+  "/": "pages/index.js",
+  "/hakkimizda": "pages/hakkimizda.js"
 }

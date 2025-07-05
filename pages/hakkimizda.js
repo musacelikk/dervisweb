@@ -21,8 +21,7 @@ export default function Hakkimizda() {
                     Hakkımızda
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-3xl mx-auto">
-                    20 yılı aşkın tecrübemizle plastik, cam ve kağıt ürünlerinde güvenilir çözüm ortağınız.
-                </p>
+                20 yılı aşkın tecrübemizle plastik, cam, kağıt, temizlik, ambalaj ve züccaciye ürünlerinde güvenilir çözüm ortağınız.                </p>
             </div>
         </div>
 
@@ -43,7 +42,7 @@ export default function Hakkimizda() {
                             <span className="text-[#ad0203]">Biz Kimiz?</span>
                         </h2>
                         <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-                            Derviş Plastik olarak, 20 yılı aşkın süredir müşterilerimize en kaliteli ürünleri en uygun fiyatlarla sunmaktan gurur duyuyoruz. Geniş ürün yelpazemiz ve uzman kadromuzla, işletmenizin ve evinizin ihtiyaç duyduğu tüm plastik, cam ve kağıt ürünlerini tek bir adreste bulabilirsiniz.
+                            Derviş Ticaret olarak, 20 yılı aşkın süredir müşterilerimize en kaliteli ürünleri en uygun fiyatlarla sunmaktan gurur duyuyoruz. Geniş ürün yelpazemiz ve uzman kadromuzla, işletmenizin ve evinizin ihtiyaç duyduğu tüm plastik, cam ve kağıt ürünlerini tek bir adreste bulabilirsiniz.
                         </p>
                         <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
                             Modern mağaza altyapımız ve stok yönetim sistemimiz sayesinde, müşterilerimize hızlı ve güvenilir hizmet sunuyoruz. Kalite standartlarımızdan ödün vermeden, rekabetçi fiyatlarımızla sektörde öncü konumumuzu sürdürüyoruz.

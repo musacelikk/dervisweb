@@ -9,19 +9,18 @@ export default function Footer()
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
                     {/* Brand Section */}
                     <div className="space-y-4 sm:space-y-6">
-                        <Link href="/" className="flex items-center space-x-2 group">
+                        <Link href="/" className="flex flex-col items-start space-y-2 group">
                             <img 
                                 src="ChatGPT Image 11 Nis 2025 10_31_43.png" 
                                 alt="Derviş Plastik" 
                                 className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
                             />
                             <span className="text-2xl font-bold text-[#ad0203] group-hover:text-[#ad0203]/80 transition-colors duration-300">
-                                DERVİŞ PLASTİK
+                                DERVİŞ TİCARET
                             </span>
                         </Link>
-                        <p className="text-sm sm:text-base text-gray-400">
-                            20 yılı aşkın tecrübemizle plastik, cam ve kağıt ürünlerinde güvenilir çözüm ortağınız.
-                        </p>
+                        <p className="text-sm sm:text-base text-gray-400 text-left">
+                        20 yılı aşkın tecrübemizle plastik, cam, kağıt, temizlik, ambalaj ve züccaciye ürünlerinde güvenilir çözüm ortağınız.                        </p>
                     </div>
 
                     {/* Contact Info */}

@@ -175,7 +175,7 @@ export default function BizeUlasin() {
                     İletişim Bilgilerimiz
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-                    20 yılı aşkın tecrübemizle plastik, cam ve kağıt ürünlerinde güvenilir çözüm ortağınız.
+                20 yılı aşkın tecrübemizle plastik, cam, kağıt, temizlik, ambalaj ve züccaciye ürünlerinde güvenilir çözüm ortağınız.
                 </p>
             </div>
         </div>
